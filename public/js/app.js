@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit',(e) =>{  // on submit form do the next lin
     messageBox.style.borderStyle = 'none'
     imgForecast.src = ''
 
-    fetch('http://localhost:3000/weather?address='+address).then((response) =>{
+    fetch('/weather?address='+address).then((response) =>{
     response.json().then((data) =>{
         if(data.error){
             messageOne.textContent = data.error  // display on browser with id tag
