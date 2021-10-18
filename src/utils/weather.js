@@ -2,7 +2,7 @@ const request_ = require('request') // npm i request@version
 
 
 const GetGeocode = (city,callback) =>{
-    var url_ = 'http://api.weatherstack.com/current?access_key=a448ffd9d4aa1eb72e188e9c59ea23e3&query='+ city
+    var url_ = 'http://api.weatherstack.com/current?access_key=<yours api key>&query='+ city
  
     request_({url:url_,json:true},(error,{body}={})=>{ 
  
@@ -24,7 +24,7 @@ const GetGeocode = (city,callback) =>{
 
 const GetForecast =  (latitude,longitude,callback) => {
 
-    var url_ = 'http://api.weatherstack.com/current?access_key=a448ffd9d4aa1eb72e188e9c59ea23e3&query='+ latitude +','+ longitude
+    var url_ = 'http://api.weatherstack.com/current?access_key=<yours api key>&query='+ latitude +','+ longitude
     
     request_({url:url_,json:true},(error,{body}) => { //make the destruction
 
