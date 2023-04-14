@@ -1,6 +1,6 @@
 
 # Weather Web Application
-Project Structure:
+Project tree structure:
 ```
 weather-application
 ├─ package-lock.json
@@ -30,7 +30,7 @@ weather-application
 ```
 
 Description:
-Weather forecast web application , by inserting address the server application will return the current forecast for provided address 
+Weather forecast web application, by inserting the address the server application will return the current forecast for the provided address 
 
 Requirement:
 - Node.js 12 +
@@ -39,7 +39,7 @@ Requirement:
 
 Start the project:
  - npm install
- - init free api key from weatherstack (on ./src/utils/weather.js file)
+ - init yours weatherstack api key (on ./src/utils/weather.js file)
  - npm run start
 
 pictures:
